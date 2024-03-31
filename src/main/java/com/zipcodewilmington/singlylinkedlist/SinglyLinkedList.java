@@ -6,7 +6,7 @@
             private Node head;
             private int size;
 
-            private class Node {
+          private class Node {
                 int data;
                 Node next;
                 Node(int data){
@@ -29,7 +29,7 @@
                         n = n.next;
                     }
                     n.next = node;
-                }
+                }size++;
             }
             public void remove(int index){
                     if(index==0){
@@ -42,7 +42,7 @@
                 }n1=n.next;
                 n.next=n1.next;
 
-                }
+                }size--;
 
             }
             public boolean contains(int data){
